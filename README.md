@@ -5,13 +5,41 @@ This project is a simulation of a digital twin of a fan using the Three.js libra
 
 <img width="1470" alt="Screenshot 2025-04-25 at 12 53 46 AM" src="https://github.com/user-attachments/assets/d5489889-e1f6-4f4b-af6f-6b8a6bd6f872" />
 
-🚀 Features
+🌟 Features
 
-3D simulation of a fan using WebGL via Three.js.
-Real-time animation of rotating fan blades.
-Responsive rendering with camera and lighting setup.
-Simulated control of fan behavior 
-Basic GUI for interaction 
+🎨 3D Scene Composition
+
+Initializes a THREE.Scene, THREE.PerspectiveCamera, and THREE.WebGLRenderer.
+Dynamically creates a virtual environment with lighting, shadows, and materials.
+
+🌬️ Fan Simulation
+
+Custom fan model built with THREE.CylinderGeometry and THREE.BoxGeometry.
+Fan blade rotation mimics real-world motor movement.
+Rotation speed dynamically adjustable with code-based control.
+
+💡 Lighting System
+
+Simulates realistic lighting using THREE.PointLight and THREE.AmbientLight.
+Shadows and highlights bring depth and realism to the scene.
+
+📦 Modular Structure
+
+Object construction and scene management separated into reusable code blocks.
+Parameters like fan speed and blade count easily configurable in code.
+🧭 Camera & Controls
+
+OrbitControls allow smooth camera interaction (rotate, pan, zoom).
+Camera positioned dynamically based on screen resolution and fan placement.
+🎞️ Animation Loop
+
+Custom animation frame loop driven by requestAnimationFrame.
+Syncs fan rotation with system frame rate for smooth movement.
+
+⚙️ Real-Time Parameter Updates
+
+Fan speed, direction, and animation parameters adjustable at runtime.
+Uses simple JS variables for control—ready for future GUI or IoT integration.
 
 📦 Built With
 
